@@ -12,20 +12,23 @@ namespace OopsConceptDayAssignment11_12
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("please Choose any Program");
-            Console.WriteLine("1.Duplicate number");
+            Console.WriteLine("1.Duplicate number\n2.Unique Elements");
             int option = Convert.ToInt32(Console.ReadLine());
-            switch(option)
+            Console.WriteLine("Enter the size of array");
+            int len = Convert.ToInt32(Console.ReadLine()); //length of array
+            int[] arr = new int[len];
+            for (int i = 0; i < len; i++)
+            {
+                Console.Write("Enter element number {0} of array:", i + 1);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            switch (option)
             {
                 case 1:
-                    Console.WriteLine("Enter the size of array");
-                    int len = Convert.ToInt32(Console.ReadLine()); //length of array
-                    int[] arr = new int[len];
-                    for (int i = 0; i < len; i++)
-                    {
-                        Console.Write("Enter element number {0} of array:", i + 1);
-                        arr[i] = Convert.ToInt32(Console.ReadLine());
-                    }
-                    Console.WriteLine("Number of elements repeating more than once in the array: " +  DuplicateElement.RepeatedDuplicateElement(arr));
+                    Console.WriteLine("Number of elements repeating more than once in the array: " +  ArrayPrograms.RepeatedDuplicateElement(arr));
+                    break;
+                case 2:
+                    ArrayPrograms.NonRepeatedUniqueElements(arr);
                     break;
             }
             Console.ReadLine();

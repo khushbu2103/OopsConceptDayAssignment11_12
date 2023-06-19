@@ -7,7 +7,7 @@ using System.Xml.Schema;
 
 namespace OopsConceptDayAssignment11_12
 {
-    internal class DuplicateElement
+    internal class ArrayPrograms
     {
         public static int RepeatedDuplicateElement(int[] arr)
         {
@@ -46,6 +46,31 @@ namespace OopsConceptDayAssignment11_12
             }
             
             return duplicateCount;
+        }
+
+        public static void NonRepeatedUniqueElements(int[] arr)
+        {
+            int len = arr.Length;
+            Console.WriteLine("The unique elements in the array are: ");
+            for (int i = 0; i < len; i++)
+            {
+                bool isUnique = true;
+                for (int j = i + 1; j < len; j++)
+                {
+                    if (arr[i] == arr[j])
+                    {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique)
+                {
+                    Console.WriteLine(arr[i]);
+
+                }
+
+            }
+
         }
     }
     
