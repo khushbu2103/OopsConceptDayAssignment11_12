@@ -12,7 +12,7 @@ namespace OopsConceptDayAssignment11_12
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("please Choose any Program");
-            Console.WriteLine("1.Duplicate number\n2.Unique Elements\n3.Frequency of elements");
+            Console.WriteLine("1.Duplicate number\n2.Unique Elements\n3.Frequency of elements\n4.Minimum and Maximum in Array");
             int option = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the size of array");
             int len = Convert.ToInt32(Console.ReadLine()); //length of array
@@ -33,6 +33,9 @@ namespace OopsConceptDayAssignment11_12
                 case 3:
                     int n = arr.Length;
                     ArrayPrograms.FrequencyOfElements(arr, n);
+                    break;
+                case 4:
+                    ArrayPrograms.MinMaxOfArray(arr);
                     break;
             }
             Console.ReadLine();

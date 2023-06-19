@@ -99,6 +99,26 @@ namespace OopsConceptDayAssignment11_12
             }
 
         }
+
+        public static void MinMaxOfArray(int[] arr)
+        {
+            int len = arr.Length;
+           
+            int max = arr[0];
+            int min = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] > max)
+                    max = arr[i];
+                if (arr[i] < min)
+                    min = arr[i];
+            }
+
+            Console.WriteLine("Maximum element: " + max);
+            Console.WriteLine("Minimum element: " + min);
+
+        }
     }
     
 }
