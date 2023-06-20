@@ -17,7 +17,8 @@ namespace OopsConceptDayAssignment11_12
                 "3.Frequency of elements\n" +
                 "4.Minimum & Maximum or array\n" +
                 "5.Right angle pattern\n" +
-                "6.Square star pattern");
+                "6.Square star pattern\n" +
+                "7. Reverse each words in string");
             int option = Convert.ToInt32(Console.ReadLine());
            
             switch (option)
@@ -78,7 +79,12 @@ namespace OopsConceptDayAssignment11_12
                     int n3 = Convert.ToInt32(Console.ReadLine());
                     ArrayPrograms.SquarePattern(n3);
                     break;
-
+                case 7:
+                    Console.Write("Enter a string: ");
+                    string input = Console.ReadLine();
+                    string result = ArrayPrograms.ReverseEachWordAtItsPosition(input);
+                    Console.WriteLine(result);
+                    break;
             }
             Console.ReadLine();
         }
