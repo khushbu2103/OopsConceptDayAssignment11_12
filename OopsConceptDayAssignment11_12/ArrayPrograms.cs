@@ -8,7 +8,9 @@ using System.Xml.Schema;
 namespace OopsConceptDayAssignment11_12
 {
     internal class ArrayPrograms
-    {
+   {
+
+
         public static int RepeatedDuplicateElement(int[] arr)
         {
 
@@ -73,19 +75,19 @@ namespace OopsConceptDayAssignment11_12
 
         }
 
-        public static void FrequencyOfElements(int[] arr, int n)
+        public static void FrequencyOfElements(int[] arr, int num)
         {
-            bool[] visited = new bool[n];
+            bool[] visited = new bool[num];
            // Array.(visited, false);
             Console.WriteLine("The unique elements in the array are: ");
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < num; i++)
             {
               if (visited[i] == true)
                 {
                     continue;
                 }
                 int count = 1;
-                for (int j = i + 1; j < n; j++)
+                for (int j = i + 1; j < num; j++)
                 {  
                     if (arr[i] == arr[j])
                     {
@@ -118,6 +120,18 @@ namespace OopsConceptDayAssignment11_12
             Console.WriteLine("Maximum element: " + max);
             Console.WriteLine("Minimum element: " + min);
 
+        }
+
+        public static void RightTrianglePattern(int n2)
+        {
+            for(int i = 0; i < n2; i++)
+            {
+                for( int j = i; j < n2; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
         }
     }
     
