@@ -133,6 +133,23 @@ namespace OopsConceptDayAssignment11_12
                 Console.WriteLine();
             }
         }
+
+        public static void SquarePattern(int n3)
+        {
+            for (int i = 0; i < n3; i++)
+            {
+                for (int j = 0; j < n3; j++)
+                {
+                    if (j == 0)
+                    {
+                        Console.Write("*");
+                        continue;
+                    }
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
     }
     
 }

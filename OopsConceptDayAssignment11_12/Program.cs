@@ -16,7 +16,8 @@ namespace OopsConceptDayAssignment11_12
                 "2.Unique Elements\n" +
                 "3.Frequency of elements\n" +
                 "4.Minimum & Maximum or array\n" +
-                "5.Right angle pattern");
+                "5.Right angle pattern\n" +
+                "6.Square star pattern");
             int option = Convert.ToInt32(Console.ReadLine());
            
             switch (option)
@@ -72,6 +73,12 @@ namespace OopsConceptDayAssignment11_12
                     int n2 = Convert.ToInt32(Console.ReadLine());
                     ArrayPrograms.RightTrianglePattern(n2);
                     break;
+                case 6:
+                    Console.WriteLine("Enter number of elements required in first row of pattern");
+                    int n3 = Convert.ToInt32(Console.ReadLine());
+                    ArrayPrograms.SquarePattern(n3);
+                    break;
+
             }
             Console.ReadLine();
         }
