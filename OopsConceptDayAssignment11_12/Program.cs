@@ -18,7 +18,8 @@ namespace OopsConceptDayAssignment11_12
                 "4.Minimum & Maximum or array\n" +
                 "5.Right angle pattern\n" +
                 "6.Square star pattern\n" +
-                "7. Reverse each words in string");
+                "7. Reverse each words in string\n" +
+                "8.Sum of all digits");
             int option = Convert.ToInt32(Console.ReadLine());
            
             switch (option)
@@ -82,8 +83,13 @@ namespace OopsConceptDayAssignment11_12
                 case 7:
                     Console.Write("Enter a string: ");
                     string input = Console.ReadLine();
-                    string result = ArrayPrograms.ReverseEachWordAtItsPosition(input);
+                    string result = ReverseEachNumber.ReverseEachWordAtItsPosition(input);
                     Console.WriteLine(result);
+                    break;
+                case 8:
+                    Console.Write("Enter a number: ");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    SumOfNumbers.SumOfDigits(num);
                     break;
             }
             Console.ReadLine();
