@@ -19,7 +19,8 @@ namespace OopsConceptDayAssignment11_12
                 "5.Right angle pattern\n" +
                 "6.Square star pattern\n" +
                 "7. Reverse each words in string\n" +
-                "8.Sum of all digits");
+                "8.Sum of all digits\n" +
+                "9.Some of Matrix");
             int option = Convert.ToInt32(Console.ReadLine());
            
             switch (option)
@@ -90,6 +91,13 @@ namespace OopsConceptDayAssignment11_12
                     Console.Write("Enter a number: ");
                     int num = Convert.ToInt32(Console.ReadLine());
                     SumOfNumbers.SumOfDigits(num);
+                    break;
+                case 9:
+                    Matrix matrix = new Matrix();
+                    matrix.Run();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
                     break;
             }
             Console.ReadLine();
