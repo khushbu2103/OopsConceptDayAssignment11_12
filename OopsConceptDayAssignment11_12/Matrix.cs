@@ -24,7 +24,19 @@ namespace OopsConceptDayAssignment11_12
 
             Matrix = new int[row, col];
 
-           
+            Console.WriteLine("Do you want to use a default matrix? (y/n)");
+            string choice = Console.ReadLine();
+
+            if (choice == "y")
+            {
+                for (int i = 0; i < row; i++)
+                {
+                    for (int j = 0; j < col; j++)
+                    {
+                        Matrix[i, j] = rand.Next(0, 101);
+                    }
+                }
+
 
                 Console.WriteLine("Do you want to print the default matrix? (y/n)");
                 string printChoice = Console.ReadLine();
